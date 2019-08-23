@@ -7,6 +7,6 @@ entry_point: "raction.py"
 parameters:
     url:
         type: "string"
-        description: "Status_code to print."
+        description: "URL status"
         required: true
         position: 0
