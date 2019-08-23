@@ -5,7 +5,7 @@ description: "Print message to standard output."
 enabled: true
 entry_point: "raction.py"
 parameters:
-    response:
+    url:
         type: "string"
         description: "Status_code to print."
         required: true
