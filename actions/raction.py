@@ -1,3 +1,4 @@
+import sys
 import requests
 
 from st2common.runners.base_action import Action
@@ -11,6 +12,6 @@ class abc(Action):
 			print(response.status_code)
 			print(response.url)
 			
-		except requests.exception.MissingSchema:
+		except: requests.exceptions.MissingSchema:
 			print("Wrong URL")
 			sys.exit(0)
