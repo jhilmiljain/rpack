@@ -12,6 +12,6 @@ class abc(Action):
 			print(response.status_code)
 			print(response.url)
 			
-		except requests.exceptions.MissingSchema:
+		except: requests.exceptions.MissingSchema:
 			print("Wrong URL")
 			sys.exit(0)
